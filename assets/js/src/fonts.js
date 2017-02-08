@@ -1,11 +1,11 @@
 "use strict";
 
 (function (w) {
-    var font1 = new w.FontFaceObserver("Raleway", {
+    var font1 = new w.FontFaceObserver("Roboto", {
         weight: 400
     });
 
-    var font2 = new w.FontFaceObserver("Raleway", {
+    var font2 = new w.FontFaceObserver("Roboto", {
         weight: 700
     });
 

@@ -74,8 +74,6 @@ img,
 
     &:hover {
         @include shadow(3);
-        -webkit-transform: translateY(-5px) !important;
-        transform: translateY(-5px) !important;
     }
 }
 
@@ -120,6 +118,7 @@ ul {
                 font-size: 24px;
             }
             &:hover {
+				text-shadow: 0 0 0.5em #fff;
                 color: $hover-color;
             }
         }

@@ -95,7 +95,6 @@
 
     a {
         transition: all .5s;
-        text-decoration: underline;
 
         &::after {
             position: absolute;
@@ -106,9 +105,7 @@
             content: "";
         }
 
-        &:hover,
-        &:visited {
-            color: $gray-dark;
+        &:hover {
         }
     }
 

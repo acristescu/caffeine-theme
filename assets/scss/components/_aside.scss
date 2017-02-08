@@ -46,10 +46,6 @@
         margin: 100px 0 10px;
         font-size: $unit * 2.75;
         @include font-shadow;
-
-        &:hover {
-            color: $pre-hover-color;
-        }
     }
 }
 

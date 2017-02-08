@@ -9,7 +9,7 @@
             {{#if @blog.logo}}
             <div class="profile-logo">
                 <a id="avatar-link" class="open-link" title="Link to homepage for {{@blog.title}}" href="{{@blog.url}}/#open">
-                    <img src="{{@blog.logo}}" alt="{{@blog.title}} avatar" class="avatar rounded hvr-buzz-out" />
+                    <img src="{{@blog.logo}}" alt="{{@blog.title}} avatar" class="avatar rounded hvr-glow" />
                 </a>
             </div>
             {{/if}}
@@ -36,7 +36,7 @@
 
 <div class="blog-header">
     <a title="Link to homepage for {{@blog.title}}" href="{{@blog.url}}/#open">
-        <h1 class="profile-title hvr-float">{{@blog.title}}</h1>
+        <h1 class="profile-title">{{@blog.title}}</h1>
     </a>
     {{navigation}}
 </div>
