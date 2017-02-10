@@ -32,7 +32,7 @@ $divider-color         : rgba(255, 255, 255, .14);
 
 $unit                  : 1rem;
 
-$sans-font             : 'Raleway', sans-serif;
+$sans-font             : 'Roboto', sans-serif;
 $sans-font-fallback    : Geneva, sans-serif;
 $serif-font            : 'Roboto Slab', Georgia, serif;
 $serif-font-fallback   : Georgia, serif;
@@ -52,12 +52,12 @@ $margin-h5             : $margin-h4 * 0.8;
 $margin-h6             : $margin-h5 * 0.8;
 
 $font-title            : $unit * 2;
-$font-h1               : $font-title * 1.1;
-$font-h2               : $font-title * 0.85;
-$font-h3               : $font-h2 * 0.85;
-$font-h4               : $font-h3 * 0.85;
-$font-h5               : $font-h4 * 0.85;
-$font-h6               : $font-h5 * 0.85;
+$font-h1               : $font-title * 1.2;
+$font-h2               : $font-title * 0.75;
+$font-h3               : $font-h2 * 0.75;
+$font-h4               : $font-h3 * 0.75;
+$font-h5               : $font-h4 * 0.75;
+$font-h6               : $font-h5 * 0.75;
 
 /* ASIDE */
 

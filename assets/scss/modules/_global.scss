@@ -60,7 +60,8 @@ h5,
 h6 {
     -webkit-font-smoothing: antialiased;
     font-weight: 700;
-	color: #999;
+	color: #666;
+	margin-bottom: 10px;
 }
 
 .fonts-loaded h1,
@@ -68,37 +69,53 @@ h6 {
 .fonts-loaded h3,
 .fonts-loaded h4,
 .fonts-loaded h6 {
-    font-family: $serif-font;
+    font-family: $sans-font;
+    margin-bottom: 6px
 }
 
 h1 {
-    margin: $margin-h1 0;
+    margin-top: $margin-h1;
     font-size: $font-h1;
     line-height: 48px;
 }
 
+h1:not(#post-title):not(.profile-title) {
+	border-bottom: 1px solid #DDD;
+    padding-bottom: 7px;
+    margin-bottom: 12px
+};
+
 h2 {
-    margin: $margin-h2 0;
+    margin-top: $margin-h2;
     font-size: $font-h2;
+	border-bottom: 1px solid #DDD;
+    padding-bottom: 7px;
+    margin-bottom: 9px
 }
 
+.card-content h2 {
+	border-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 32px;
+};
+
 h3 {
-    margin: $margin-h3 0;
+    margin-top: $margin-h3;
     font-size: $font-h3;
 }
 
 h4 {
-    margin: $margin-h4 0;
+    margin-top: $margin-h4;
     font-size: $font-h4;
 }
 
 h5 {
-    margin: $margin-h5 0;
+    margin-top: $margin-h5;
     font-size: $font-h5;
 }
 
 h6 {
-    margin: $margin-h6 0;
+    margin-top: $margin-h6;
     font-size: $font-h6;
 }
 
@@ -112,6 +129,11 @@ p {
         @include inline-code-style;
     }
 }
+
+li p {
+    margin-bottom: 0px;
+}
+
 .fonts-loaded p{
     font-size: 100%;
 }
@@ -126,7 +148,7 @@ em {
 
 blockquote {
     > p {
-		font-family: sans-serif;
+		font-family: $sans-font;
 		border-left-style: solid;
 		border-left-color: rgba(3,155,229,.701961);
 		border-left-width: 3px;
