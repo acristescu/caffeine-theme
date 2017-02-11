@@ -48,11 +48,19 @@
 
 .post {
     .post-card {
+		border-radius: 4px;
         max-width: $container-medium-width;
         background: white;
         margin: 0 auto;
         @include transition(all 250ms);
         @include shadow(2);
+		
+		.material-cover {
+			position:inherit;
+			height:250px;
+			border-top-left-radius:4px;
+			border-top-right-radius:4px;
+		}
     }
 
     .post-container {

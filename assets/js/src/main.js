@@ -101,7 +101,6 @@ $(function() {
 
     $(window).load(function() {
         if (CaffeineTheme.is("page", "home")) {
-            $(".blog-header").addClass("animated fade-in");
 
             if (CaffeineTheme.isOpen()) {
                 CaffeineTheme.showNotification();

@@ -1,8 +1,15 @@
 <header id="default-nav-header" class="nav-header nav-header-fixed animated">
+	{{> material-cover}}
+	<div class="blog-header">
+	    <a title="Link to homepage for {{@blog.title}}" href="{{@blog.url}}/#open">
+	        <h1 class="profile-title">{{@blog.title}}</h1>
+	    </a>
+	    {{navigation}}
+	</div>
     <a id="home-button" href="{{@blog.url}}">
         {{!-- <img src="{{asset "img/icons/icon.png"}}" alt="{{@blog.title}} icon" class="icon rounded hvr-glow" /> --}}
         <img src="{{@blog.logo}}" alt="{{@blog.title}} avatar" class="avatar rounded hvr-glow" />
-      </a>
+    </a>	
     <a class="tags-button right">
         <i class="fa fa-search hvr-glow"></i>
     </a>

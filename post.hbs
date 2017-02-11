@@ -3,13 +3,10 @@
 {{#post}}
 
   <article class="{{post_class}}">
-    {{> material-cover}}
     <div class="post-card animated fade-in">
-        <a id="back-button" href="#open" title="Go back" class="hvr-grow">
-            <div class="back-button">
-                <i class="fa fa-arrow-left"></i>
-            </div>
-        </a>
+		{{#if image}}
+		<div class="material-cover" style="background-image:url({{image}})"></div>
+		{{/if}}
         <div class="post-container">
             <div class="post-header">
                 <div class="meta">
