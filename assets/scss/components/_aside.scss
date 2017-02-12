@@ -43,8 +43,11 @@
 
     h1 {
         color: $slate-white;
-        margin: 10px 0 10px;
-        font-size: $unit * 2.75;
+        margin: 3px 0 3px -45px;
+        font-size: $unit * 2.25;
+		text-transform: uppercase;
+	    font-size: 2.25rem;
+	    letter-spacing: $unit * .15;
         @include font-shadow;
     }
 }
@@ -70,8 +73,10 @@
         }
         img {
             width: 112px;
-            border: 2px solid $primary-color;
-            @include shadow(2);
+			box-shadow: 0 0 5px #000;
+			&:hover {
+				box-shadow: 0 0 15px #000;
+			}
         }
     }
 }
@@ -85,22 +90,25 @@
                 display: inline-block;
                 margin: 0 5px;
                 border-radius: 20px;
-                background: $primary-color;
                 color: $slate-white;
                 @include btn-cover-with-border;
 
                 a {
+					-webkit-transition: all 0ms cubic-bezier(.645,.045,.355,1);
+				    transition: all 0ms cubic-bezier(.645,.045,.355,1);
                     padding: 10px 20px;
                     font-size: 14px;
+					text-transform: none;
                     @include btn-cover;
 
                     &:hover {
-                        color: $primary-color;
+					    text-shadow: 0 0 5px #fff;
+						color: $slate-white;
                     }
                 }
 
                 &:hover {
-                    background: $hover-color-inverse;
+				    box-shadow: 0 0 10px #fff, inset 0 0 10px #fff;
                 }
 
                 &:first-child {
@@ -120,7 +128,6 @@
         li {
             display: inline-block;
             line-height: 16px;
-            border-left: 1px solid $slate-white;
 
             &:first-child {
                 border: none;
@@ -135,13 +142,15 @@
                 float: none;
 				position: inherit;
                 padding: 8px 20px 8px 22px;
-                font-size: 18px;
+				text-transform: uppercase;
+			    font-size: 13px;
+			    letter-spacing: .15rem;
                 color: $slate-white;
 
                 @include font-shadow;
 
                 &:hover {
-                    color: $pre-hover-color ;
+				    text-shadow: 0 0 5px #fff;
                 }
             }
         }

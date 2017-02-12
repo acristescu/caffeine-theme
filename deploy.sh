@@ -1,8 +1,10 @@
 #!/bin/bash
 gulp build
-scp -i ~/.ssh/aws1.pem assets/css/caffeine-theme.css bitnami@ec2-52-56-109-75.eu-west-2.compute.amazonaws.com:/opt/bitnami/apps/ghost/htdocs/content/themes/caffeine-theme-master/assets/css
-scp -i ~/.ssh/aws1.pem assets/js/caffeine-theme.js bitnami@ec2-52-56-109-75.eu-west-2.compute.amazonaws.com:/opt/bitnami/apps/ghost/htdocs/content/themes/caffeine-theme-master/assets/js
-scp -i ~/.ssh/aws1.pem partials/* bitnami@ec2-52-56-109-75.eu-west-2.compute.amazonaws.com:/opt/bitnami/apps/ghost/htdocs/content/themes/caffeine-theme-master/partials/
-scp -i ~/.ssh/aws1.pem *.hbs bitnami@ec2-52-56-109-75.eu-west-2.compute.amazonaws.com:/opt/bitnami/apps/ghost/htdocs/content/themes/caffeine-theme-master/
-ssh -i ~/.ssh/aws1.pem bitnami@ec2-52-56-109-75.eu-west-2.compute.amazonaws.com 'sudo /opt/bitnami/ctlscript.sh restart ghost'
+rsync -Pavh -e ssh assets/css/caffeine-theme.css bitnami@blog:/opt/bitnami/apps/ghost/htdocs/content/themes/caffeine-theme-master/assets/css
+rsync -Pavh -e ssh assets/js/caffeine-theme.js bitnami@blog:/opt/bitnami/apps/ghost/htdocs/content/themes/caffeine-theme-master/assets/js
+rsync -Pavh -e ssh partials/ bitnami@blog:/opt/bitnami/apps/ghost/htdocs/content/themes/caffeine-theme-master/partials --delete
+rsync -Pavh -e ssh assets/fonts/ bitnami@blog:/opt/bitnami/apps/ghost/htdocs/content/themes/caffeine-theme-master/assets/fonts --delete
+rsync -Pavh -e ssh assets/img/ bitnami@blog:/opt/bitnami/apps/ghost/htdocs/content/themes/caffeine-theme-master/assets/img --delete
+rsync -Pavh -e ssh *.hbs bitnami@blog:/opt/bitnami/apps/ghost/htdocs/content/themes/caffeine-theme-master
+ssh bitnami@blog 'sudo /opt/bitnami/ctlscript.sh restart ghost'
 

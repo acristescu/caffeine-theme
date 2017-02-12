@@ -15,17 +15,16 @@
 
         i {
             position: relative;
-            font-size: 20px;
+            font-size: 25px;
             color: $slate-white;
-            background: $primary-color;
-            border: 2px solid $slate-white;
+            border: none;
             border-radius: 50%;
             padding: 12px;
-            @include shadow(2);
-            @extend .animated;
 
             &:hover {
                 cursor: pointer;
+				box-shadow: none;
+			    text-shadow: 0 0 5px #fff;
             }
 
             &.fa-close {
@@ -37,12 +36,17 @@
         }
 
         img {
-            max-width: 45px;
+            max-width: 48px;
             border: 2px solid $slate-white;
             @include shadow(2);
 
             &.avatar {
-                border: 2px solid $primary-color;
+				border: none;
+				box-shadow: 0 0px 7px rgba(255,255,255,.6);
+
+				&:hover {
+				    box-shadow: 0 0 10px #fff;
+				}
             }
         }
 

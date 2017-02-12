@@ -132,7 +132,6 @@ h6 {
 p {
     margin-bottom: 20px;
     line-height: 26px;
-    font-size: 90%;
     word-wrap: break-word;
 
     > code {
@@ -207,7 +206,7 @@ pre {
     border-radius: 3px;
     > code {
         font-family: $code-font;
-        font-size: 12px;
+        font-size: 13px;
         color: $gray-dark;
         white-space: pre-wrap;
     }
@@ -253,7 +252,7 @@ iframe {
 main {
     z-index: 2;
     position: absolute;
-	top: 140px;
+	top: 115px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -276,7 +275,7 @@ main {
 .material-cover {
 	position: fixed;
 	top: 0;
-	height: 125px;
+	height: 100px;
     width: 100%;
     text-align: center;
     background: #222 no-repeat center center;
@@ -296,9 +295,23 @@ main {
 }
 
 header .material-cover {
-    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+    box-shadow: 0 3px 10px rgba(0,0,0,.7);
 }
 
+#home-button i {
+	font-size: 30px;
+	border: none;
+	box-shadow: none;
+}
+
+#home-button .icon {
+	border: none;
+	box-shadow: none;
+	
+	&:hover {
+		box-shadow: 0 0 10px #fff, inset 0 0 30px #fff;
+	};
+}
 .copyright {
     display: block;
     margin-bottom: 12px;

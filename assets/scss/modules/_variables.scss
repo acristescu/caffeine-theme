@@ -15,7 +15,7 @@ $slate-gray            : #39424B;
 $slate-green           : #56817A;
 $midnight-blue         : #222F38;
 
-$primary-color         : lighten($midnight-blue, 30%);
+$primary-color		   : darken(#31558d, 10%);
 $secondary-color       : $slate-gray;
 
 $cover-secondary       : rgba(#5f2c82, .1);
@@ -36,7 +36,7 @@ $sans-font             : 'Roboto', Geneva, sans-serif;
 $sans-font-fallback    : 'Roboto', Geneva, sans-serif;
 $serif-font            : 'Roboto Slab', Georgia, serif;
 $serif-font-fallback   : 'Roboto Slab', Georgia, serif;
-$code-font             : Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+$code-font             : Consolas, "Liberation Mono", Menlo, Monaco, Courier, monospace;
 $quote-font            : "freight-text-pro", Georgia, Cambria, "Times New Roman", Times, serif;
 
 $font-weight-thin      : 100;
