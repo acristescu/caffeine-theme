@@ -17,6 +17,7 @@
             color: "#ee6262",
             thumbnail: "https://s3-ap-southeast-2.amazonaws.com/subbscribe/img/avatar.png",
             emailonly: false,
+			nameOptional: true,
             cm_mail_field: "",
             delay: 0,
 
@@ -64,7 +65,7 @@
             var name = $("#subb-NAME");
             var email = $("#subb-EMAIL");
 
-            if (!settings.emailonly) {
+            if (!settings.emailonly && !settings.nameOptional) {
                 if (name.val().length < 2) {
                     valid = false;
                     name.addClass("error");
@@ -129,7 +130,7 @@
         // Make sure list is either set to MailChimp or CampaignMonitor
         // Change field names if yours don’t match
         if (settings.list === "MailChimp") {
-            _name = "NAME";
+            _name = "FNAME";
             _email = "EMAIL";
             _action = settings.url.replace("/post?", "/post-json?").concat("&c=?");
         } else if (settings.list === "CampaignMonitor") {
@@ -143,12 +144,12 @@
         }
 
         // Separate the input fields from the HTML
-        // if emailonly is set, nameInput should be blank
+        // if emailonly is set, emailInput should be blank
         var nameInput = "";
         var emailInput = '<input type="email" name="' + _email + '" id="subb-EMAIL" placeholder="Email Address" />';
 
         if (!settings.emailonly) {
-            nameInput = ' <input type="text" name="' + _name + '" id="subb-NAME" placeholder="Name" />';
+            nameInput = ' <input type="text" name="' + _name + '" id="subb-NAME" placeholder="Name (optional)" />';
         }
 
         // HTML

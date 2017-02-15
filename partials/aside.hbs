@@ -6,22 +6,16 @@
                     <i class="fa fa-close"></i>
                 </a>
             </header>
-            {{#if @blog.logo}}
-            <div class="profile-logo">
-                <a id="avatar-link" class="open-link" title="Link to homepage for {{@blog.title}}" href="{{@blog.url}}/#open">
-                    <img src="{{@blog.logo}}" alt="{{@blog.title}} avatar" class="avatar rounded hvr-glow" />
-                </a>
-            </div>
-            {{/if}}
+            <img src="/assets/img/icons/android-zen1.png" alt="{{@blog.title}} logo"/>
             <div class="profile-header">
                 <a class="open-link" title="Link to homepage for {{@blog.title}}" href="{{@blog.url}}/#open">
                     <h1 class="profile-title">{{@blog.title}}</h1>
                 </a>
             </div>
             <div class="profile-body">
-                <a class="open-link" title="Link to homepage for {{@blog.title}}" href="{{@blog.url}}/#open">
+<!--                <a class="open-link" title="Link to homepage for {{@blog.title}}" href="{{@blog.url}}/#open">
                     <h3 id="profile-resume"></h3>
-                </a>
+                </a> -->
                 <hr class="divider long" />
                 <p>{{@blog.description}}</p>
                 <hr class="divider short" />
