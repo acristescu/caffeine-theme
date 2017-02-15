@@ -160,7 +160,7 @@ $(function() {
         getGridWidth: function(numColumns) {
             var width = null;
 
-            if (!isNaN(numColumns) && numColumns > 0 && numColumns !== 2) {
+            if (!isNaN(numColumns) && numColumns > 0) {
                 width = Math.floor((100 - 2 * numColumns) / numColumns);
                 width += "%";
             }

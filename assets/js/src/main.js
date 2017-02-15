@@ -68,6 +68,7 @@ $(function() {
     if ($posts && $posts.masonry) {
         $postsGrid = $posts.masonry({
             itemSelector: cardName,
+			transitionDuration: 0,
             percentPosition: true
         });
 
@@ -79,6 +80,15 @@ $(function() {
                 },
                 gridColumnWidth = function() {
                     $posts.find(cardName).css("width", width);
+					setTimeout(
+						function() {
+							$posts.masonry({
+					            itemSelector: cardName,
+								transitionDuration: 0,
+					            percentPosition: true
+					        });
+						}, 300
+					);
                 };
 
             if (width) {
@@ -114,7 +124,11 @@ $(function() {
             window.sr = window.ScrollReveal().reveal(cardName, {
                 afterReveal: function () {
                     if ($postsGrid) {
-                        $postsGrid.masonry("layout");
+						$posts.masonry({
+				            itemSelector: cardName,
+							transitionDuration: 0,
+				            percentPosition: true
+				        });
                     }
                 }
             });
