@@ -51,7 +51,8 @@ src = {
             "assets/vendor/reading-time/build/readingTime.min.js",
             "assets/vendor/prism/prism.js",
             "assets/vendor/toastr/toastr.min.js",
-            "assets/vendor/store-js/store.min.js"
+            "assets/vendor/store-js/store.min.js",
+			"assets/vendor/jquery-toc/dist/jquery.toc.min.js"
         ]
     },
     css: {

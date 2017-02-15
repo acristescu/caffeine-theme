@@ -30,7 +30,8 @@
     "bourbon": "4.2.7",
     "toastr": "2.1.2",
     "store-js": "1.3.20",
-    "fontfaceobserver": "1.7.1"
+    "fontfaceobserver": "1.7.1",
+	"jquery-toc": "0.0.5"
   },
   "ignore": [
     "**/.*",

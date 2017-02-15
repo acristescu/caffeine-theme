@@ -138,4 +138,18 @@ $(function() {
 
         CaffeineTheme.setLastPageNum();
     });
+	
+	var toc = $( "p" )
+    	.contents()
+		.filter(function(){
+			return this.nodeValue == "[TOC]";
+		}).parent();
+	
+	if(toc != []) {
+		toc.addClass("toc");
+		toc.empty();
+		toc.initTOC({overwrite:false,scope:".post-content"});
+		toc.prepend("<h3>Contents</h3>");
+	}
+	
 });

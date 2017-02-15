@@ -68,6 +68,13 @@
     }
 }
 
+.post-content h1:before,.post-content h2:before,.post-content h3:before,.post-content h4:before {
+    content: " ";
+    margin-top: -$header-height - $header-space-below;
+    height: $header-height + $header-space-below;
+    visibility: hidden;
+    display:block;
+}
 
 .posts,
 .post-header {
