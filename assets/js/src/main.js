@@ -152,4 +152,13 @@ $(function() {
 		toc.prepend("<h3>Contents</h3>");
 	}
 	
+	// $(".post-content img[src$='gif'")
+	// 	.each(function(a, b) {
+	// 		$(this).attr('data-gifffer', $(this).attr('src'));
+	// 		$(this).attr('data-gifffer-width', $(this).attr('width'));
+	// 		$(this).attr('data-gifffer-height', $(this).attr('height'));
+	// 		$(this).removeAttr('src')
+	// 	}
+	// );
+	// Gifffer();
 });

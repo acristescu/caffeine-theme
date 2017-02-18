@@ -17,7 +17,7 @@ body {
 
 body {
     font-family: $sans-font-fallback;
-    color: $gray-darker;
+    color: $gray-darkest;
     background: $gray-lighter;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -61,7 +61,7 @@ h5,
 h6 {
     -webkit-font-smoothing: antialiased;
     font-weight: 700;
-	color: #666;
+	color: $gray-darkest;
 	margin-bottom: 10px;
 }
 

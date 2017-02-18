@@ -10,7 +10,7 @@ body {
     }
 
     &.page-error {
-        background: url("/assets/img/backgrounds/404_error_background.jpg") center/cover no-repeat;
+        background: url("/assets/img/backgrounds/bkg.jpg") center/cover no-repeat;
         > article {
             @include center-absolute;
         }

@@ -90,6 +90,10 @@
         left: 0;
         transform: translate3d(0, 0, 0);
     }
+	.page-about .post-content p img {
+		max-width: 75%;
+	}
+	
 }
 
 @media all and (max-width: 700px) {
@@ -100,6 +104,10 @@
     .card {
         width: 100%;
     }
+	.page-about .post-content p img {
+		max-width: 100%;
+		max-height: 300px;
+	}
 }
 
 // ------------------------------
@@ -120,7 +128,7 @@
     .post-content {
         p {
             img {
-                width: 100%;
+                max-width: 100%;
             }
         }
     }
@@ -185,6 +193,9 @@
             }
         }
     }
+	.navigation .links li a, .blog-header h1 {
+		letter-spacing: normal;
+	}
 }
 
 // ------------------------------

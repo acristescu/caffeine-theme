@@ -62,4 +62,11 @@
             }
         }
     }
+	
+	.post-content p img {
+		max-width: 50%;
+		max-height: 400px;
+		box-shadow: 0 0 10px #333;
+		border: 0;
+	}
 }

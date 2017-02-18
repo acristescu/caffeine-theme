@@ -53,6 +53,7 @@ src = {
             "assets/vendor/toastr/toastr.min.js",
             "assets/vendor/store-js/store.min.js",
 			"assets/vendor/jquery-toc/dist/jquery.toc.min.js"
+            // "assets/vendor/gifffer/build/gifffer.min.js"
         ]
     },
     css: {
